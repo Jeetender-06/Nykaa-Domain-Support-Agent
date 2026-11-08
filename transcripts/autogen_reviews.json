@@ -1,0 +1,96 @@
+{
+  "clean": {
+    "draft": {
+      "answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+      "sources": [
+        {
+          "document_id": "cod_refunds",
+          "chunk_id": "cod_refunds:sentence:0",
+          "text": "For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.",
+          "similarity": 0.75269049
+        },
+        {
+          "document_id": "cod_refunds",
+          "chunk_id": "cod_refunds:sentence:1",
+          "text": "The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+          "similarity": 0.49064577
+        },
+        {
+          "document_id": "payment_retry",
+          "chunk_id": "payment_retry:sentence:0",
+          "text": "If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.",
+          "similarity": 0.37953222
+        }
+      ],
+      "order": null,
+      "needs_escalation": false,
+      "outcome": "answered"
+    },
+    "verdict": {
+      "approved": true,
+      "final_answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+      "reason": "Every claim matches supplied policy or order evidence."
+    },
+    "messages": [
+      {
+        "source": "Policy_Compliance_Reviewer",
+        "content": "{\"grounded\": true, \"unsupported_lines\": [], \"instruction\": \"Keep only claims supported by supplied policy passages or order fields.\"}"
+      },
+      {
+        "source": "Final_Editor",
+        "content": {
+          "approved": true,
+          "final_answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+          "reason": "Every claim matches supplied policy or order evidence."
+        }
+      }
+    ]
+  },
+  "corrupted": {
+    "draft": {
+      "answer": "[returns] Beauty products can be returned within 5 calendar days only if unopened with the hygiene seal intact; opened cosmetics are not eligible for a change-of-mind return. Electronics have a 7 calendar day return window for a verified defect, with the invoice, accessories, and original packaging required.\n[returns] Apparel and Footwear returns are accepted within 7 calendar days of delivery when the item is unworn and its tags remain attached. Home items have a 7 calendar day return window when unused and in their original packaging.\nWe guarantee free international express shipping tomorrow.",
+      "sources": [
+        {
+          "document_id": "returns",
+          "chunk_id": "returns:sentence:1",
+          "text": "Beauty products can be returned within 5 calendar days only if unopened with the hygiene seal intact; opened cosmetics are not eligible for a change-of-mind return. Electronics have a 7 calendar day return window for a verified defect, with the invoice, accessories, and original packaging required.",
+          "similarity": 0.79889894
+        },
+        {
+          "document_id": "returns",
+          "chunk_id": "returns:sentence:0",
+          "text": "Apparel and Footwear returns are accepted within 7 calendar days of delivery when the item is unworn and its tags remain attached. Home items have a 7 calendar day return window when unused and in their original packaging.",
+          "similarity": 0.63112122
+        },
+        {
+          "document_id": "warranty",
+          "chunk_id": "warranty:sentence:1",
+          "text": "Home items have a manufacturer warranty only when the product listing explicitly offers one. Beauty items have no usage warranty, and adverse reactions should be referred to a qualified medical professional without a diagnosis from support.",
+          "similarity": 0.45410109
+        }
+      ],
+      "order": null,
+      "needs_escalation": false,
+      "outcome": "answered"
+    },
+    "verdict": {
+      "approved": false,
+      "final_answer": "[returns] Beauty products can be returned within 5 calendar days only if unopened with the hygiene seal intact; opened cosmetics are not eligible for a change-of-mind return. Electronics have a 7 calendar day return window for a verified defect, with the invoice, accessories, and original packaging required.\n[returns] Apparel and Footwear returns are accepted within 7 calendar days of delivery when the item is unworn and its tags remain attached. Home items have a 7 calendar day return window when unused and in their original packaging.",
+      "reason": "Removed unsupported claims from the draft; preserved evidence-backed text."
+    },
+    "messages": [
+      {
+        "source": "Policy_Compliance_Reviewer",
+        "content": "{\"grounded\": false, \"unsupported_lines\": [\"We guarantee free international express shipping tomorrow.\"], \"instruction\": \"Keep only claims supported by supplied policy passages or order fields.\"}"
+      },
+      {
+        "source": "Final_Editor",
+        "content": {
+          "approved": false,
+          "final_answer": "[returns] Beauty products can be returned within 5 calendar days only if unopened with the hygiene seal intact; opened cosmetics are not eligible for a change-of-mind return. Electronics have a 7 calendar day return window for a verified defect, with the invoice, accessories, and original packaging required.\n[returns] Apparel and Footwear returns are accepted within 7 calendar days of delivery when the item is unworn and its tags remain attached. Home items have a 7 calendar day return window when unused and in their original packaging.",
+          "reason": "Removed unsupported claims from the draft; preserved evidence-backed text."
+        }
+      }
+    ]
+  }
+}

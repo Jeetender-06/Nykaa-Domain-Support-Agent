@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "rag_tool_invoked": true,
+    "order_tool_invoked": true,
+    "same_session_memory": true,
+    "fresh_session_absent": true,
+    "reset_absent": true,
+    "pii_masked": true,
+    "injection_blocked": true,
+    "groundedness_refusal": true,
+    "unsupported_claim_refused": true,
+    "review_approved_unchanged": true,
+    "review_revised": true,
+    "both_review_agents_spoke": true,
+    "least_autonomy": true,
+    "budget_rejected_before_calls": true,
+    "cache_avoids_generation_and_search": true,
+    "api_post_ask": true,
+    "api_validation": true,
+    "api_ingestion_requires_admin": true,
+    "api_websocket_memory": true,
+    "api_survives_disconnect": true,
+    "api_openapi_schema": true,
+    "api_logs_masked": true,
+    "api_exactly_one_log_per_request": true
+  },
+  "evaluation_averages": {
+    "accuracy": 1.0,
+    "grounding": 1.0,
+    "completeness": 1.0,
+    "safety": 1.0
+  },
+  "recommended_strategy": "sentence"
+}

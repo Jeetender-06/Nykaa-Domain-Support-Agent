@@ -1,0 +1,353 @@
+[
+  {
+    "query": "What is the return window for unopened Beauty products?",
+    "answer": "[returns] Beauty products can be returned within 5 calendar days only if unopened with the hygiene seal intact; opened cosmetics are not eligible for a change-of-mind return. Electronics have a 7 calendar day return window for a verified defect, with the invoice, accessories, and original packaging required.\n[returns] Apparel and Footwear returns are accepted within 7 calendar days of delivery when the item is unworn and its tags remain attached. Home items have a 7 calendar day return window when unused and in their original packaging.",
+    "sources": [
+      {
+        "document_id": "returns",
+        "chunk_id": "returns:sentence:1",
+        "text": "Beauty products can be returned within 5 calendar days only if unopened with the hygiene seal intact; opened cosmetics are not eligible for a change-of-mind return. Electronics have a 7 calendar day return window for a verified defect, with the invoice, accessories, and original packaging required.",
+        "similarity": 0.79889894
+      },
+      {
+        "document_id": "returns",
+        "chunk_id": "returns:sentence:0",
+        "text": "Apparel and Footwear returns are accepted within 7 calendar days of delivery when the item is unworn and its tags remain attached. Home items have a 7 calendar day return window when unused and in their original packaging.",
+        "similarity": 0.63112122
+      },
+      {
+        "document_id": "warranty",
+        "chunk_id": "warranty:sentence:1",
+        "text": "Home items have a manufacturer warranty only when the product listing explicitly offers one. Beauty items have no usage warranty, and adverse reactions should be referred to a qualified medical professional without a diagnosis from support.",
+        "similarity": 0.45410109
+      }
+    ],
+    "supported": true,
+    "similarity": 0.79889894,
+    "cache_hit": false
+  },
+  {
+    "query": "What is the refund timeline for a cash on delivery order?",
+    "answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+    "sources": [
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:0",
+        "text": "For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.",
+        "similarity": 0.77319205
+      },
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:1",
+        "text": "The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+        "similarity": 0.73592836
+      },
+      {
+        "document_id": "payment_retry",
+        "chunk_id": "payment_retry:sentence:0",
+        "text": "If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.",
+        "similarity": 0.46081865
+      }
+    ],
+    "supported": true,
+    "similarity": 0.77319205,
+    "cache_hit": false
+  },
+  {
+    "query": "What are the standard delivery SLAs for metro and other Indian destinations?",
+    "answer": "[delivery] Standard delivery takes 3 to 5 business days for metro destinations and 5 to 8 business days for other serviceable Indian PIN codes, measured from dispatch. The estimated delivery date shown at checkout is the reference for a shipment-delay inquiry.",
+    "sources": [
+      {
+        "document_id": "delivery",
+        "chunk_id": "delivery:sentence:0",
+        "text": "Standard delivery takes 3 to 5 business days for metro destinations and 5 to 8 business days for other serviceable Indian PIN codes, measured from dispatch. The estimated delivery date shown at checkout is the reference for a shipment-delay inquiry.",
+        "similarity": 0.56096274
+      },
+      {
+        "document_id": "international",
+        "chunk_id": "international:sentence:0",
+        "text": "This demonstration store ships only to serviceable addresses within India and does not offer international shipping. Cross-border delivery, forwarding addresses outside India, and international return pickups are unsupported.",
+        "similarity": 0.44303012
+      },
+      {
+        "document_id": "international",
+        "chunk_id": "international:sentence:1",
+        "text": "Imported products listed in the store are dispatched from Indian inventory and follow the domestic category policies. Customers cannot request support to bypass customs or destination restrictions.",
+        "similarity": 0.43210697
+      }
+    ],
+    "supported": true,
+    "similarity": 0.56096274,
+    "cache_hit": false
+  },
+  {
+    "query": "Who is eligible for reverse pickup and what happens in an unserviceable PIN code?",
+    "answer": "[reverse_pickup] If the PIN code is not serviceable for reverse pickup, support may authorize self-shipping and provide the approved return address in the account portal. A failed pickup after 2 scheduled attempts should be referred to the logistics team.\n[reverse_pickup] Reverse pickup is available only for an approved return at an Indian PIN code served by the pickup partner. The item must meet its category's return rules and be packed with all accessories before the pickup attempt.",
+    "sources": [
+      {
+        "document_id": "reverse_pickup",
+        "chunk_id": "reverse_pickup:sentence:1",
+        "text": "If the PIN code is not serviceable for reverse pickup, support may authorize self-shipping and provide the approved return address in the account portal. A failed pickup after 2 scheduled attempts should be referred to the logistics team.",
+        "similarity": 0.80262339
+      },
+      {
+        "document_id": "reverse_pickup",
+        "chunk_id": "reverse_pickup:sentence:0",
+        "text": "Reverse pickup is available only for an approved return at an Indian PIN code served by the pickup partner. The item must meet its category's return rules and be packed with all accessories before the pickup attempt.",
+        "similarity": 0.75510466
+      },
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:1",
+        "text": "The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+        "similarity": 0.27669263
+      }
+    ],
+    "supported": true,
+    "similarity": 0.80262339,
+    "cache_hit": false
+  },
+  {
+    "query": "What warranty terms apply to Electronics, Apparel, Home, and Beauty?",
+    "answer": "[warranty] Electronics carry the manufacturer's warranty shown on the product page, and a warranty claim requires the invoice and serial number. Apparel and Footwear have no extended warranty in this demonstration policy; manufacturing defects must be reported within their return window.\n[warranty] Home items have a manufacturer warranty only when the product listing explicitly offers one. Beauty items have no usage warranty, and adverse reactions should be referred to a qualified medical professional without a diagnosis from support.",
+    "sources": [
+      {
+        "document_id": "warranty",
+        "chunk_id": "warranty:sentence:0",
+        "text": "Electronics carry the manufacturer's warranty shown on the product page, and a warranty claim requires the invoice and serial number. Apparel and Footwear have no extended warranty in this demonstration policy; manufacturing defects must be reported within their return window.",
+        "similarity": 0.70043296
+      },
+      {
+        "document_id": "warranty",
+        "chunk_id": "warranty:sentence:1",
+        "text": "Home items have a manufacturer warranty only when the product listing explicitly offers one. Beauty items have no usage warranty, and adverse reactions should be referred to a qualified medical professional without a diagnosis from support.",
+        "similarity": 0.64396727
+      },
+      {
+        "document_id": "returns",
+        "chunk_id": "returns:sentence:1",
+        "text": "Beauty products can be returned within 5 calendar days only if unopened with the hygiene seal intact; opened cosmetics are not eligible for a change-of-mind return. Electronics have a 7 calendar day return window for a verified defect, with the invoice, accessories, and original packaging required.",
+        "similarity": 0.40394491
+      }
+    ],
+    "supported": true,
+    "similarity": 0.70043296,
+    "cache_hit": false
+  },
+  {
+    "query": "When can I cancel an order and what happens after packing starts?",
+    "answer": "[cancellation] An order can be cancelled from the account page while its status is Placed and before warehouse packing begins. Once packing or shipping starts, cancellation is unavailable and the customer must use the applicable return process after delivery.\n[cancellation] A prepaid cancellation refund is initiated to the original payment method within 2 business days of cancellation confirmation. Support can explain cancellation eligibility but cannot cancel or modify an order through this chat.",
+    "sources": [
+      {
+        "document_id": "cancellation",
+        "chunk_id": "cancellation:sentence:0",
+        "text": "An order can be cancelled from the account page while its status is Placed and before warehouse packing begins. Once packing or shipping starts, cancellation is unavailable and the customer must use the applicable return process after delivery.",
+        "similarity": 0.69449925
+      },
+      {
+        "document_id": "cancellation",
+        "chunk_id": "cancellation:sentence:1",
+        "text": "A prepaid cancellation refund is initiated to the original payment method within 2 business days of cancellation confirmation. Support can explain cancellation eligibility but cannot cancel or modify an order through this chat.",
+        "similarity": 0.55956864
+      },
+      {
+        "document_id": "delivery",
+        "chunk_id": "delivery:sentence:1",
+        "text": "A shipment that has not moved for 48 hours after the estimated delivery date should be escalated to the logistics team. Business days exclude Sundays and public holidays, and support cannot promise an exact delivery hour.",
+        "similarity": 0.50363368
+      }
+    ],
+    "supported": true,
+    "similarity": 0.69449925,
+    "cache_hit": false
+  },
+  {
+    "query": "What is the minimum loyalty points redemption balance and maximum checkout discount?",
+    "answer": "[loyalty] Loyalty points can be redeemed at checkout once the account has at least 100 available points. Each loyalty point is worth INR 1, and points may cover at most 20 percent of the eligible product subtotal.\n[loyalty] Points cannot pay shipping fees, buy gift cards, or be exchanged for cash. Redeemed points from a fully cancelled order return to the same account within 48 hours after cancellation confirmation.",
+    "sources": [
+      {
+        "document_id": "loyalty",
+        "chunk_id": "loyalty:sentence:0",
+        "text": "Loyalty points can be redeemed at checkout once the account has at least 100 available points. Each loyalty point is worth INR 1, and points may cover at most 20 percent of the eligible product subtotal.",
+        "similarity": 0.74550349
+      },
+      {
+        "document_id": "loyalty",
+        "chunk_id": "loyalty:sentence:1",
+        "text": "Points cannot pay shipping fees, buy gift cards, or be exchanged for cash. Redeemed points from a fully cancelled order return to the same account within 48 hours after cancellation confirmation.",
+        "similarity": 0.50329697
+      },
+      {
+        "document_id": "escalation",
+        "chunk_id": "escalation:sentence:0",
+        "text": "Level 1 support handles routine policy and order-status questions, with an acknowledgement target of 4 business hours. Level 2 logistics handles stalled deliveries and failed pickups, while Level 2 payments handles overdue refunds and unreversed debits, with a response target of 1 business day.",
+        "similarity": 0.25269991
+      }
+    ],
+    "supported": true,
+    "similarity": 0.74550349,
+    "cache_hit": false
+  },
+  {
+    "query": "My payment failed but I was debited. When should I retry and when will the debit reverse?",
+    "answer": "[payment_retry] If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.\n[payment_retry] Retry only when the order page confirms payment failure, and use the same order's payment link to avoid a duplicate purchase. If the debit remains after 5 business days, submit the transaction reference through the secure support form without sharing a card number or OTP.",
+    "sources": [
+      {
+        "document_id": "payment_retry",
+        "chunk_id": "payment_retry:sentence:0",
+        "text": "If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.",
+        "similarity": 0.84152222
+      },
+      {
+        "document_id": "payment_retry",
+        "chunk_id": "payment_retry:sentence:1",
+        "text": "Retry only when the order page confirms payment failure, and use the same order's payment link to avoid a duplicate purchase. If the debit remains after 5 business days, submit the transaction reference through the secure support form without sharing a card number or OTP.",
+        "similarity": 0.76811349
+      },
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:1",
+        "text": "The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+        "similarity": 0.53752357
+      }
+    ],
+    "supported": true,
+    "similarity": 0.84152222,
+    "cache_hit": false
+  },
+  {
+    "query": "Can I exchange Footwear for another size, and what if the size is unavailable?",
+    "answer": "[size_exchange] Apparel and Footwear may be exchanged once for a different size of the same product within 7 calendar days of delivery, subject to stock. Size exchanges require an unworn item with its tags and original packaging intact.\n[size_exchange] If the requested size is unavailable, the customer can request an eligible return instead of a guaranteed exchange. Beauty, Electronics, and Home items are not eligible for a size exchange.",
+    "sources": [
+      {
+        "document_id": "size_exchange",
+        "chunk_id": "size_exchange:sentence:0",
+        "text": "Apparel and Footwear may be exchanged once for a different size of the same product within 7 calendar days of delivery, subject to stock. Size exchanges require an unworn item with its tags and original packaging intact.",
+        "similarity": 0.70697725
+      },
+      {
+        "document_id": "size_exchange",
+        "chunk_id": "size_exchange:sentence:1",
+        "text": "If the requested size is unavailable, the customer can request an eligible return instead of a guaranteed exchange. Beauty, Electronics, and Home items are not eligible for a size exchange.",
+        "similarity": 0.60759008
+      },
+      {
+        "document_id": "returns",
+        "chunk_id": "returns:sentence:0",
+        "text": "Apparel and Footwear returns are accepted within 7 calendar days of delivery when the item is unworn and its tags remain attached. Home items have a 7 calendar day return window when unused and in their original packaging.",
+        "similarity": 0.42981589
+      }
+    ],
+    "supported": true,
+    "similarity": 0.70697725,
+    "cache_hit": false
+  },
+  {
+    "query": "How do I report a damaged item and what photos should I attach?",
+    "answer": "[damaged_claim] Report a damaged, leaking, or wrong item within 48 hours of delivery using the order's Help section. Attach clear photographs of the item, shipping label, and outer packaging, and retain the packaging until the claim is resolved.\n[damaged_claim] The claims team reviews the evidence within 2 business days and confirms an eligible replacement or refund after verification. Do not use a damaged electrical device or a leaking cosmetic while waiting for the review.",
+    "sources": [
+      {
+        "document_id": "damaged_claim",
+        "chunk_id": "damaged_claim:sentence:0",
+        "text": "Report a damaged, leaking, or wrong item within 48 hours of delivery using the order's Help section. Attach clear photographs of the item, shipping label, and outer packaging, and retain the packaging until the claim is resolved.",
+        "similarity": 0.63875169
+      },
+      {
+        "document_id": "damaged_claim",
+        "chunk_id": "damaged_claim:sentence:1",
+        "text": "The claims team reviews the evidence within 2 business days and confirms an eligible replacement or refund after verification. Do not use a damaged electrical device or a leaking cosmetic while waiting for the review.",
+        "similarity": 0.46446359
+      },
+      {
+        "document_id": "warranty",
+        "chunk_id": "warranty:sentence:0",
+        "text": "Electronics carry the manufacturer's warranty shown on the product page, and a warranty claim requires the invoice and serial number. Apparel and Footwear have no extended warranty in this demonstration policy; manufacturing defects must be reported within their return window.",
+        "similarity": 0.25647879
+      }
+    ],
+    "supported": true,
+    "similarity": 0.63875169,
+    "cache_hit": false
+  },
+  {
+    "query": "Does the store allow international shipping or delivery outside India?",
+    "answer": "[international] Imported products listed in the store are dispatched from Indian inventory and follow the domestic category policies. Customers cannot request support to bypass customs or destination restrictions.\n[international] This demonstration store ships only to serviceable addresses within India and does not offer international shipping. Cross-border delivery, forwarding addresses outside India, and international return pickups are unsupported.",
+    "sources": [
+      {
+        "document_id": "international",
+        "chunk_id": "international:sentence:1",
+        "text": "Imported products listed in the store are dispatched from Indian inventory and follow the domestic category policies. Customers cannot request support to bypass customs or destination restrictions.",
+        "similarity": 0.78723258
+      },
+      {
+        "document_id": "international",
+        "chunk_id": "international:sentence:0",
+        "text": "This demonstration store ships only to serviceable addresses within India and does not offer international shipping. Cross-border delivery, forwarding addresses outside India, and international return pickups are unsupported.",
+        "similarity": 0.76687211
+      },
+      {
+        "document_id": "delivery",
+        "chunk_id": "delivery:sentence:0",
+        "text": "Standard delivery takes 3 to 5 business days for metro destinations and 5 to 8 business days for other serviceable Indian PIN codes, measured from dispatch. The estimated delivery date shown at checkout is the reference for a shipment-delay inquiry.",
+        "similarity": 0.42766052
+      }
+    ],
+    "supported": true,
+    "similarity": 0.78723258,
+    "cache_hit": false
+  },
+  {
+    "query": "What is the customer support escalation matrix from Level 1 to Level 3?",
+    "answer": "[escalation] Level 1 support handles routine policy and order-status questions, with an acknowledgement target of 4 business hours. Level 2 logistics handles stalled deliveries and failed pickups, while Level 2 payments handles overdue refunds and unreversed debits, with a response target of 1 business day.\n[escalation] Level 3 grievance review handles unresolved Level 2 cases after 3 business days, with a response target of 2 business days. An escalation score is a recommendation for human triage and never automatically issues a refund, cancels an order, or promises a resolution time.",
+    "sources": [
+      {
+        "document_id": "escalation",
+        "chunk_id": "escalation:sentence:0",
+        "text": "Level 1 support handles routine policy and order-status questions, with an acknowledgement target of 4 business hours. Level 2 logistics handles stalled deliveries and failed pickups, while Level 2 payments handles overdue refunds and unreversed debits, with a response target of 1 business day.",
+        "similarity": 0.78175163
+      },
+      {
+        "document_id": "escalation",
+        "chunk_id": "escalation:sentence:1",
+        "text": "Level 3 grievance review handles unresolved Level 2 cases after 3 business days, with a response target of 2 business days. An escalation score is a recommendation for human triage and never automatically issues a refund, cancels an order, or promises a resolution time.",
+        "similarity": 0.66125971
+      },
+      {
+        "document_id": "delivery",
+        "chunk_id": "delivery:sentence:1",
+        "text": "A shipment that has not moved for 48 hours after the estimated delivery date should be escalated to the logistics team. Business days exclude Sundays and public holidays, and support cannot promise an exact delivery hour.",
+        "similarity": 0.23261178
+      }
+    ],
+    "supported": true,
+    "similarity": 0.78175163,
+    "cache_hit": false
+  },
+  {
+    "query": "Explain how tectonic plates create volcanoes on Mars.",
+    "answer": "I don't know based on the available support knowledge. Please contact human support.",
+    "sources": [
+      {
+        "document_id": "damaged_claim",
+        "chunk_id": "damaged_claim:sentence:0",
+        "text": "Report a damaged, leaking, or wrong item within 48 hours of delivery using the order's Help section. Attach clear photographs of the item, shipping label, and outer packaging, and retain the packaging until the claim is resolved.",
+        "similarity": 0.04314077
+      },
+      {
+        "document_id": "escalation",
+        "chunk_id": "escalation:sentence:0",
+        "text": "Level 1 support handles routine policy and order-status questions, with an acknowledgement target of 4 business hours. Level 2 logistics handles stalled deliveries and failed pickups, while Level 2 payments handles overdue refunds and unreversed debits, with a response target of 1 business day.",
+        "similarity": 0.03588802
+      },
+      {
+        "document_id": "damaged_claim",
+        "chunk_id": "damaged_claim:sentence:1",
+        "text": "The claims team reviews the evidence within 2 business days and confirms an eligible replacement or refund after verification. Do not use a damaged electrical device or a leaking cosmetic while waiting for the review.",
+        "similarity": 0.01394385
+      }
+    ],
+    "supported": false,
+    "similarity": 0.04314077,
+    "cache_hit": false
+  }
+]

@@ -1,0 +1,148 @@
+{
+  "same_session": [
+    {
+      "answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+      "sources": [],
+      "order": {
+        "record_id": "NYK-0001",
+        "found": true,
+        "status": "Delivered",
+        "category": "Apparel",
+        "order_value_inr": 8684,
+        "days_since_created": 20,
+        "delayed_shipment": false,
+        "escalation_score": 0.233333,
+        "recommend_escalation": false
+      },
+      "needs_escalation": false,
+      "outcome": "answered",
+      "trace_id": "2097976e2ffb4db99a710fdb97cedad5",
+      "session_id": "demo_memory",
+      "masked_query": "Please check order NYK-0001.",
+      "review": {
+        "approved": true,
+        "final_answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+        "reason": "Every claim matches supplied policy or order evidence."
+      },
+      "tool_calls": [
+        {
+          "agent": "Lookup Agent",
+          "tool": "check_order_status",
+          "arguments": {
+            "record_id": "NYK-0001"
+          },
+          "cache_hit": false
+        }
+      ],
+      "guardrails": [],
+      "usage": {
+        "prompt_tokens_upper_bound": 11347,
+        "completion_tokens_upper_bound": 1315,
+        "simulated_cost_usd": 0.013977,
+        "actual_cost_usd": 0,
+        "model_calls": 6
+      },
+      "elapsed_ms": 469.963
+    },
+    {
+      "answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+      "sources": [],
+      "order": {
+        "record_id": "NYK-0001",
+        "found": true,
+        "status": "Delivered",
+        "category": "Apparel",
+        "order_value_inr": 8684,
+        "days_since_created": 20,
+        "delayed_shipment": false,
+        "escalation_score": 0.233333,
+        "recommend_escalation": false
+      },
+      "needs_escalation": false,
+      "outcome": "answered",
+      "trace_id": "d35f73a8350b48e99293f4305c7b8a3b",
+      "session_id": "demo_memory",
+      "masked_query": "What is its status?",
+      "review": {
+        "approved": true,
+        "final_answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+        "reason": "Every claim matches supplied policy or order evidence."
+      },
+      "tool_calls": [
+        {
+          "agent": "Lookup Agent",
+          "tool": "check_order_status",
+          "arguments": {
+            "record_id": "NYK-0001"
+          },
+          "cache_hit": false
+        }
+      ],
+      "guardrails": [
+        "session_order_resolved"
+      ],
+      "usage": {
+        "prompt_tokens_upper_bound": 11311,
+        "completion_tokens_upper_bound": 1315,
+        "simulated_cost_usd": 0.013941,
+        "actual_cost_usd": 0,
+        "model_calls": 6
+      },
+      "elapsed_ms": 442.111
+    }
+  ],
+  "fresh_session": [
+    {
+      "answer": "Please provide an order ID such as NYK-0001 so I can check its status.",
+      "sources": [],
+      "order": null,
+      "needs_escalation": false,
+      "outcome": "clarification",
+      "trace_id": "327024f2aaa54c86b98b6667cd3952ea",
+      "session_id": "demo_fresh",
+      "masked_query": "What is its status?",
+      "review": {
+        "approved": true,
+        "final_answer": "Please provide an order ID such as NYK-0001 so I can check its status.",
+        "reason": "Every claim matches supplied policy or order evidence."
+      },
+      "tool_calls": [],
+      "guardrails": [],
+      "usage": {
+        "prompt_tokens_upper_bound": 8811,
+        "completion_tokens_upper_bound": 573,
+        "simulated_cost_usd": 0.009957,
+        "actual_cost_usd": 0,
+        "model_calls": 5
+      },
+      "elapsed_ms": 423.438
+    }
+  ],
+  "after_explicit_reset": [
+    {
+      "answer": "Please provide an order ID such as NYK-0001 so I can check its status.",
+      "sources": [],
+      "order": null,
+      "needs_escalation": false,
+      "outcome": "clarification",
+      "trace_id": "8e15dcb7a87c429eb266ceb0e57862e5",
+      "session_id": "demo_memory",
+      "masked_query": "What is its status?",
+      "review": {
+        "approved": true,
+        "final_answer": "Please provide an order ID such as NYK-0001 so I can check its status.",
+        "reason": "Every claim matches supplied policy or order evidence."
+      },
+      "tool_calls": [],
+      "guardrails": [],
+      "usage": {
+        "prompt_tokens_upper_bound": 8811,
+        "completion_tokens_upper_bound": 573,
+        "simulated_cost_usd": 0.009957,
+        "actual_cost_usd": 0,
+        "model_calls": 5
+      },
+      "elapsed_ms": 450.572
+    }
+  ]
+}

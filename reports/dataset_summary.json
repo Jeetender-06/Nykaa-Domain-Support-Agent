@@ -1,0 +1,40 @@
+{
+  "seed": 2026,
+  "count": 60,
+  "category_weights": {
+    "Apparel": 20,
+    "Electronics": 15,
+    "Home": 15,
+    "Footwear": 20,
+    "Beauty": 30
+  },
+  "status_weights": {
+    "Placed": 15,
+    "Shipped": 25,
+    "Delivered": 40,
+    "Returned": 10,
+    "Refunded": 10
+  },
+  "amount_range_inr": [
+    299,
+    14999
+  ],
+  "delay_probability": 0.2,
+  "counts_per_category": {
+    "Apparel": 8,
+    "Beauty": 20,
+    "Electronics": 6,
+    "Footwear": 12,
+    "Home": 14
+  },
+  "counts_per_status": {
+    "Delivered": 24,
+    "Placed": 13,
+    "Refunded": 5,
+    "Returned": 5,
+    "Shipped": 13
+  },
+  "delayed_count": 11,
+  "delayed_percentage": 18.3333,
+  "age_p80_nearest_rank": 24
+}

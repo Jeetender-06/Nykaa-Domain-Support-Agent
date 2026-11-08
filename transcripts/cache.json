@@ -1,0 +1,20 @@
+{
+  "before": {
+    "searches": 40,
+    "generations": 16,
+    "cache_hits": 2
+  },
+  "after_first": {
+    "searches": 41,
+    "generations": 17,
+    "cache_hits": 2
+  },
+  "after_repeat": {
+    "searches": 41,
+    "generations": 17,
+    "cache_hits": 3
+  },
+  "first_cache_hit": false,
+  "repeat_cache_hit": true,
+  "same_answer": true
+}

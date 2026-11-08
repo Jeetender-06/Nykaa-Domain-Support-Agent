@@ -1,0 +1,14 @@
+{
+  "pytest_exit_code": 0,
+  "tests": {
+    "passed": 40,
+    "failed": 0,
+    "skipped": 0
+  },
+  "evidence_regenerated_with_egress_blocked": true,
+  "outbound_attempts": 0,
+  "attempt_types": [],
+  "elapsed_seconds": 11.905,
+  "mode": "MOCK_LLM",
+  "result": "passed"
+}

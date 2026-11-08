@@ -1,0 +1,525 @@
+{
+  "k_chunks": 3,
+  "unit": "deduplicated parent document",
+  "strategies": {
+    "fixed": {
+      "rows": [
+        {
+          "id": "Q01",
+          "query": "What is the return window for unopened Beauty products?",
+          "relevant": [
+            "returns"
+          ],
+          "retrieved": [
+            "returns",
+            "warranty"
+          ],
+          "chunk_ids": [
+            "returns:fixed:0",
+            "returns:fixed:1",
+            "warranty:fixed:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q02",
+          "query": "What is the refund timeline for a cash on delivery order?",
+          "relevant": [
+            "cod_refunds"
+          ],
+          "retrieved": [
+            "cancellation",
+            "cod_refunds"
+          ],
+          "chunk_ids": [
+            "cod_refunds:fixed:0",
+            "cod_refunds:fixed:1",
+            "cancellation:fixed:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q03",
+          "query": "What are the standard delivery SLAs for metro and other Indian destinations?",
+          "relevant": [
+            "delivery"
+          ],
+          "retrieved": [
+            "delivery",
+            "international"
+          ],
+          "chunk_ids": [
+            "delivery:fixed:0",
+            "international:fixed:0",
+            "international:fixed:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q04",
+          "query": "Who is eligible for reverse pickup and what happens in an unserviceable PIN code?",
+          "relevant": [
+            "reverse_pickup"
+          ],
+          "retrieved": [
+            "loyalty",
+            "reverse_pickup"
+          ],
+          "chunk_ids": [
+            "reverse_pickup:fixed:0",
+            "reverse_pickup:fixed:1",
+            "loyalty:fixed:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q05",
+          "query": "What warranty terms apply to Electronics, Apparel, Home, and Beauty?",
+          "relevant": [
+            "warranty"
+          ],
+          "retrieved": [
+            "returns",
+            "warranty"
+          ],
+          "chunk_ids": [
+            "warranty:fixed:0",
+            "warranty:fixed:1",
+            "returns:fixed:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q06",
+          "query": "When can I cancel an order and what happens after packing starts?",
+          "relevant": [
+            "cancellation"
+          ],
+          "retrieved": [
+            "cancellation",
+            "delivery"
+          ],
+          "chunk_ids": [
+            "cancellation:fixed:0",
+            "cancellation:fixed:1",
+            "delivery:fixed:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q07",
+          "query": "What is the minimum loyalty points redemption balance and maximum checkout discount?",
+          "relevant": [
+            "loyalty"
+          ],
+          "retrieved": [
+            "cod_refunds",
+            "loyalty"
+          ],
+          "chunk_ids": [
+            "loyalty:fixed:0",
+            "loyalty:fixed:1",
+            "cod_refunds:fixed:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q08",
+          "query": "My payment failed but I was debited. When should I retry and when will the debit reverse?",
+          "relevant": [
+            "payment_retry"
+          ],
+          "retrieved": [
+            "cod_refunds",
+            "payment_retry"
+          ],
+          "chunk_ids": [
+            "payment_retry:fixed:0",
+            "payment_retry:fixed:1",
+            "cod_refunds:fixed:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q09",
+          "query": "Can I exchange Footwear for another size, and what if the size is unavailable?",
+          "relevant": [
+            "size_exchange"
+          ],
+          "retrieved": [
+            "returns",
+            "size_exchange"
+          ],
+          "chunk_ids": [
+            "size_exchange:fixed:0",
+            "size_exchange:fixed:1",
+            "returns:fixed:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q10",
+          "query": "How do I report a damaged item and what photos should I attach?",
+          "relevant": [
+            "damaged_claim"
+          ],
+          "retrieved": [
+            "damaged_claim",
+            "payment_retry"
+          ],
+          "chunk_ids": [
+            "damaged_claim:fixed:0",
+            "damaged_claim:fixed:1",
+            "payment_retry:fixed:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q11",
+          "query": "Does the store allow international shipping or delivery outside India?",
+          "relevant": [
+            "international"
+          ],
+          "retrieved": [
+            "delivery",
+            "international"
+          ],
+          "chunk_ids": [
+            "international:fixed:0",
+            "international:fixed:1",
+            "delivery:fixed:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q12",
+          "query": "What is the customer support escalation matrix from Level 1 to Level 3?",
+          "relevant": [
+            "escalation"
+          ],
+          "retrieved": [
+            "delivery",
+            "escalation"
+          ],
+          "chunk_ids": [
+            "escalation:fixed:0",
+            "escalation:fixed:1",
+            "delivery:fixed:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        }
+      ],
+      "mean_precision": 0.5,
+      "mean_recall": 1.0,
+      "mean_f1": 0.6666666666666666
+    },
+    "sentence": {
+      "rows": [
+        {
+          "id": "Q01",
+          "query": "What is the return window for unopened Beauty products?",
+          "relevant": [
+            "returns"
+          ],
+          "retrieved": [
+            "returns",
+            "warranty"
+          ],
+          "chunk_ids": [
+            "returns:sentence:1",
+            "returns:sentence:0",
+            "warranty:sentence:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q02",
+          "query": "What is the refund timeline for a cash on delivery order?",
+          "relevant": [
+            "cod_refunds"
+          ],
+          "retrieved": [
+            "cod_refunds",
+            "payment_retry"
+          ],
+          "chunk_ids": [
+            "cod_refunds:sentence:0",
+            "cod_refunds:sentence:1",
+            "payment_retry:sentence:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q03",
+          "query": "What are the standard delivery SLAs for metro and other Indian destinations?",
+          "relevant": [
+            "delivery"
+          ],
+          "retrieved": [
+            "delivery",
+            "international"
+          ],
+          "chunk_ids": [
+            "delivery:sentence:0",
+            "international:sentence:0",
+            "international:sentence:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q04",
+          "query": "Who is eligible for reverse pickup and what happens in an unserviceable PIN code?",
+          "relevant": [
+            "reverse_pickup"
+          ],
+          "retrieved": [
+            "cod_refunds",
+            "reverse_pickup"
+          ],
+          "chunk_ids": [
+            "reverse_pickup:sentence:1",
+            "reverse_pickup:sentence:0",
+            "cod_refunds:sentence:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q05",
+          "query": "What warranty terms apply to Electronics, Apparel, Home, and Beauty?",
+          "relevant": [
+            "warranty"
+          ],
+          "retrieved": [
+            "returns",
+            "warranty"
+          ],
+          "chunk_ids": [
+            "warranty:sentence:0",
+            "warranty:sentence:1",
+            "returns:sentence:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q06",
+          "query": "When can I cancel an order and what happens after packing starts?",
+          "relevant": [
+            "cancellation"
+          ],
+          "retrieved": [
+            "cancellation",
+            "delivery"
+          ],
+          "chunk_ids": [
+            "cancellation:sentence:0",
+            "cancellation:sentence:1",
+            "delivery:sentence:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q07",
+          "query": "What is the minimum loyalty points redemption balance and maximum checkout discount?",
+          "relevant": [
+            "loyalty"
+          ],
+          "retrieved": [
+            "escalation",
+            "loyalty"
+          ],
+          "chunk_ids": [
+            "loyalty:sentence:0",
+            "loyalty:sentence:1",
+            "escalation:sentence:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q08",
+          "query": "My payment failed but I was debited. When should I retry and when will the debit reverse?",
+          "relevant": [
+            "payment_retry"
+          ],
+          "retrieved": [
+            "cod_refunds",
+            "payment_retry"
+          ],
+          "chunk_ids": [
+            "payment_retry:sentence:0",
+            "payment_retry:sentence:1",
+            "cod_refunds:sentence:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q09",
+          "query": "Can I exchange Footwear for another size, and what if the size is unavailable?",
+          "relevant": [
+            "size_exchange"
+          ],
+          "retrieved": [
+            "returns",
+            "size_exchange"
+          ],
+          "chunk_ids": [
+            "size_exchange:sentence:0",
+            "size_exchange:sentence:1",
+            "returns:sentence:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q10",
+          "query": "How do I report a damaged item and what photos should I attach?",
+          "relevant": [
+            "damaged_claim"
+          ],
+          "retrieved": [
+            "damaged_claim",
+            "warranty"
+          ],
+          "chunk_ids": [
+            "damaged_claim:sentence:0",
+            "damaged_claim:sentence:1",
+            "warranty:sentence:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q11",
+          "query": "Does the store allow international shipping or delivery outside India?",
+          "relevant": [
+            "international"
+          ],
+          "retrieved": [
+            "delivery",
+            "international"
+          ],
+          "chunk_ids": [
+            "international:sentence:1",
+            "international:sentence:0",
+            "delivery:sentence:0"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "Q12",
+          "query": "What is the customer support escalation matrix from Level 1 to Level 3?",
+          "relevant": [
+            "escalation"
+          ],
+          "retrieved": [
+            "delivery",
+            "escalation"
+          ],
+          "chunk_ids": [
+            "escalation:sentence:0",
+            "escalation:sentence:1",
+            "delivery:sentence:1"
+          ],
+          "precision_arithmetic": "1/2 = 0.500000",
+          "recall_arithmetic": "1/1 = 1.000000",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        }
+      ],
+      "mean_precision": 0.5,
+      "mean_recall": 1.0,
+      "mean_f1": 0.6666666666666666
+    }
+  },
+  "recommended_strategy": "sentence"
+}

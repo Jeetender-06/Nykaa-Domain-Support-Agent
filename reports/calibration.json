@@ -1,0 +1,110 @@
+{
+  "corpus_fingerprint": "8a7c3bb00560b40d005100ccd857dca439f62568942a92ecd392c7d20ac0e3cc",
+  "strategies": {
+    "fixed": {
+      "measurements": [
+        {
+          "query": "How many days do I have to return an unworn pair of shoes?",
+          "in_scope": true,
+          "top1_cosine": 0.6535297
+        },
+        {
+          "query": "When will a cash on delivery refund appear in my bank account?",
+          "in_scope": true,
+          "top1_cosine": 0.72886539
+        },
+        {
+          "query": "How long does standard delivery take to an Indian metro city?",
+          "in_scope": true,
+          "top1_cosine": 0.77284414
+        },
+        {
+          "query": "Can I cancel an order after warehouse packing has started?",
+          "in_scope": true,
+          "top1_cosine": 0.67749739
+        },
+        {
+          "query": "What evidence is needed to report an item that arrived damaged?",
+          "in_scope": true,
+          "top1_cosine": 0.68112183
+        },
+        {
+          "query": "Do you ship orders to countries outside India?",
+          "in_scope": true,
+          "top1_cosine": 0.69686908
+        },
+        {
+          "query": "Explain the orbital period of Neptune.",
+          "in_scope": false,
+          "top1_cosine": 0.06979936
+        },
+        {
+          "query": "Write a JavaScript function to sort a binary tree.",
+          "in_scope": false,
+          "top1_cosine": 0.06052381
+        },
+        {
+          "query": "Who won the 1983 cricket world cup?",
+          "in_scope": false,
+          "top1_cosine": 0.1061179
+        }
+      ],
+      "min_in_scope": 0.6535297,
+      "max_out_of_scope": 0.1061179,
+      "threshold": 0.3798238
+    },
+    "sentence": {
+      "measurements": [
+        {
+          "query": "How many days do I have to return an unworn pair of shoes?",
+          "in_scope": true,
+          "top1_cosine": 0.66729468
+        },
+        {
+          "query": "When will a cash on delivery refund appear in my bank account?",
+          "in_scope": true,
+          "top1_cosine": 0.73399615
+        },
+        {
+          "query": "How long does standard delivery take to an Indian metro city?",
+          "in_scope": true,
+          "top1_cosine": 0.7852065
+        },
+        {
+          "query": "Can I cancel an order after warehouse packing has started?",
+          "in_scope": true,
+          "top1_cosine": 0.71269214
+        },
+        {
+          "query": "What evidence is needed to report an item that arrived damaged?",
+          "in_scope": true,
+          "top1_cosine": 0.69266963
+        },
+        {
+          "query": "Do you ship orders to countries outside India?",
+          "in_scope": true,
+          "top1_cosine": 0.69597936
+        },
+        {
+          "query": "Explain the orbital period of Neptune.",
+          "in_scope": false,
+          "top1_cosine": 0.05605227
+        },
+        {
+          "query": "Write a JavaScript function to sort a binary tree.",
+          "in_scope": false,
+          "top1_cosine": 0.06992483
+        },
+        {
+          "query": "Who won the 1983 cricket world cup?",
+          "in_scope": false,
+          "top1_cosine": 0.11165541
+        }
+      ],
+      "min_in_scope": 0.66729468,
+      "max_out_of_scope": 0.11165541,
+      "threshold": 0.38947505
+    }
+  },
+  "selected_strategy": "sentence"
+}

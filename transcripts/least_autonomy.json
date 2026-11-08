@@ -1,0 +1,7 @@
+{
+  "attempted_agent": "Response Composer",
+  "attempted_tool": "check_order_status",
+  "blocked": true,
+  "reason": "Only Lookup Agent may receive or execute the order lookup tool",
+  "escalation_threshold": 0.93
+}

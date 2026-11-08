@@ -1,0 +1,265 @@
+{
+  "checks": {
+    "post_ask": true,
+    "validation": true,
+    "ingestion_requires_admin": true,
+    "websocket_memory": true,
+    "survives_disconnect": true,
+    "openapi_schema": true,
+    "logs_masked": true,
+    "exactly_one_log_per_request": true
+  },
+  "http_response": {
+    "answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+    "sources": [
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:0",
+        "text": "For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.",
+        "similarity": 0.55040509
+      },
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:1",
+        "text": "The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+        "similarity": 0.42554379
+      },
+      {
+        "document_id": "cancellation",
+        "chunk_id": "cancellation:sentence:1",
+        "text": "A prepaid cancellation refund is initiated to the original payment method within 2 business days of cancellation confirmation. Support can explain cancellation eligibility but cannot cancel or modify an order through this chat.",
+        "similarity": 0.34007239
+      }
+    ],
+    "order": null,
+    "needs_escalation": false,
+    "outcome": "answered",
+    "trace_id": "dd6797c6639a47439cdf6db25cf9f15b",
+    "session_id": "api_demo",
+    "masked_query": "My phone is [PHONE], card ending in [CARD_LAST4]. What is the COD refund timeline?",
+    "review": {
+      "approved": true,
+      "final_answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+      "reason": "Every claim matches supplied policy or order evidence."
+    },
+    "tool_calls": [
+      {
+        "agent": "Retrieval Agent",
+        "tool": "rag_lookup",
+        "arguments": {
+          "query": "My phone is [PHONE], card ending in [CARD_LAST4]. What is the COD refund timeline?"
+        },
+        "cache_hit": false
+      }
+    ],
+    "guardrails": [
+      "pii_masked"
+    ],
+    "usage": {
+      "prompt_tokens_upper_bound": 19942,
+      "completion_tokens_upper_bound": 4963,
+      "simulated_cost_usd": 0.029868,
+      "actual_cost_usd": 0.0,
+      "model_calls": 7
+    },
+    "elapsed_ms": 866.202
+  },
+  "websocket": [
+    {
+      "answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+      "sources": [],
+      "order": {
+        "record_id": "NYK-0001",
+        "found": true,
+        "status": "Delivered",
+        "category": "Apparel",
+        "order_value_inr": 8684,
+        "days_since_created": 20,
+        "delayed_shipment": false,
+        "escalation_score": 0.233333,
+        "recommend_escalation": false
+      },
+      "needs_escalation": false,
+      "outcome": "answered",
+      "trace_id": "1d0ed27383564f8aa718f8c9005d68d5",
+      "session_id": "ws_demo",
+      "masked_query": "Check order NYK-0001.",
+      "review": {
+        "approved": true,
+        "final_answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+        "reason": "Every claim matches supplied policy or order evidence."
+      },
+      "tool_calls": [
+        {
+          "agent": "Lookup Agent",
+          "tool": "check_order_status",
+          "arguments": {
+            "record_id": "NYK-0001"
+          },
+          "cache_hit": false
+        }
+      ],
+      "guardrails": [],
+      "usage": {
+        "prompt_tokens_upper_bound": 11319,
+        "completion_tokens_upper_bound": 1315,
+        "simulated_cost_usd": 0.013949,
+        "actual_cost_usd": 0,
+        "model_calls": 6
+      },
+      "elapsed_ms": 209.157
+    },
+    {
+      "answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+      "sources": [],
+      "order": {
+        "record_id": "NYK-0001",
+        "found": true,
+        "status": "Delivered",
+        "category": "Apparel",
+        "order_value_inr": 8684,
+        "days_since_created": 20,
+        "delayed_shipment": false,
+        "escalation_score": 0.233333,
+        "recommend_escalation": false
+      },
+      "needs_escalation": false,
+      "outcome": "answered",
+      "trace_id": "688167e14037447ba9d4fdc5433c054f",
+      "session_id": "ws_demo",
+      "masked_query": "What is its status?",
+      "review": {
+        "approved": true,
+        "final_answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+        "reason": "Every claim matches supplied policy or order evidence."
+      },
+      "tool_calls": [
+        {
+          "agent": "Lookup Agent",
+          "tool": "check_order_status",
+          "arguments": {
+            "record_id": "NYK-0001"
+          },
+          "cache_hit": false
+        }
+      ],
+      "guardrails": [
+        "session_order_resolved"
+      ],
+      "usage": {
+        "prompt_tokens_upper_bound": 11311,
+        "completion_tokens_upper_bound": 1315,
+        "simulated_cost_usd": 0.013941,
+        "actual_cost_usd": 0,
+        "model_calls": 6
+      },
+      "elapsed_ms": 207.027
+    },
+    {
+      "answer": "Please provide an order ID such as NYK-0001 so I can check its status.",
+      "sources": [],
+      "order": null,
+      "needs_escalation": false,
+      "outcome": "clarification",
+      "trace_id": "602035f49e544483b1604b216fed87cf",
+      "session_id": "ws_fresh",
+      "masked_query": "What is its status?",
+      "review": {
+        "approved": true,
+        "final_answer": "Please provide an order ID such as NYK-0001 so I can check its status.",
+        "reason": "Every claim matches supplied policy or order evidence."
+      },
+      "tool_calls": [],
+      "guardrails": [],
+      "usage": {
+        "prompt_tokens_upper_bound": 8811,
+        "completion_tokens_upper_bound": 573,
+        "simulated_cost_usd": 0.009957,
+        "actual_cost_usd": 0,
+        "model_calls": 5
+      },
+      "elapsed_ms": 229.687
+    }
+  ],
+  "audit_entries": [
+    {
+      "event": "http_request",
+      "trace_id": "dd6797c6639a47439cdf6db25cf9f15b",
+      "method": "POST",
+      "path": "/ask",
+      "query": "My phone is [PHONE], card ending in [CARD_LAST4]. What is the COD refund timeline?",
+      "status": 200,
+      "outcome": "answered",
+      "elapsed_ms": 872.246,
+      "timestamp": "2026-11-08T16:36:58.141205+00:00"
+    },
+    {
+      "event": "http_request",
+      "trace_id": "35a70df3a25b4f9a9f3f0e6b296859a6",
+      "method": "POST",
+      "path": "/ask",
+      "query": "",
+      "status": 422,
+      "outcome": "http_completed",
+      "elapsed_ms": 2.153,
+      "timestamp": "2026-11-08T16:36:58.148200+00:00"
+    },
+    {
+      "event": "http_request",
+      "trace_id": "e0203c679f114141aac9e99427345288",
+      "method": "POST",
+      "path": "/add-document",
+      "query": "This is a demonstration policy addition. It requires administrator approval.",
+      "status": 403,
+      "outcome": "http_completed",
+      "elapsed_ms": 3.082,
+      "timestamp": "2026-11-08T16:36:58.155208+00:00"
+    },
+    {
+      "event": "websocket_request",
+      "trace_id": "1d0ed27383564f8aa718f8c9005d68d5",
+      "query": "Check order NYK-0001.",
+      "outcome": "answered",
+      "elapsed_ms": 210.269,
+      "timestamp": "2026-11-08T16:36:58.372716+00:00"
+    },
+    {
+      "event": "websocket_request",
+      "trace_id": "688167e14037447ba9d4fdc5433c054f",
+      "query": "What is its status?",
+      "outcome": "answered",
+      "elapsed_ms": 208.056,
+      "timestamp": "2026-11-08T16:36:58.581159+00:00"
+    },
+    {
+      "event": "websocket_request",
+      "trace_id": "602035f49e544483b1604b216fed87cf",
+      "query": "What is its status?",
+      "outcome": "clarification",
+      "elapsed_ms": 230.51,
+      "timestamp": "2026-11-08T16:36:58.815768+00:00"
+    },
+    {
+      "event": "http_request",
+      "trace_id": "e064b1115abb4e029f3520f14262de5c",
+      "method": "GET",
+      "path": "/health",
+      "query": "",
+      "status": 200,
+      "outcome": "http_completed",
+      "elapsed_ms": 0.895,
+      "timestamp": "2026-11-08T16:36:58.821737+00:00"
+    },
+    {
+      "event": "http_request",
+      "trace_id": "b140f62cc4fd4f9aac678ca773365cd1",
+      "method": "GET",
+      "path": "<unmatched>",
+      "query": "",
+      "status": 200,
+      "outcome": "http_completed",
+      "elapsed_ms": 46.338,
+      "timestamp": "2026-11-08T16:36:58.865048+00:00"
+    }
+  ]
+}

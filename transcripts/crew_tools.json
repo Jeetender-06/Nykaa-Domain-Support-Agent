@@ -1,0 +1,170 @@
+{
+  "policy_query": {
+    "answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+    "sources": [
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:0",
+        "text": "For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.",
+        "similarity": 0.75269049
+      },
+      {
+        "document_id": "cod_refunds",
+        "chunk_id": "cod_refunds:sentence:1",
+        "text": "The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+        "similarity": 0.49064577
+      },
+      {
+        "document_id": "payment_retry",
+        "chunk_id": "payment_retry:sentence:0",
+        "text": "If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.",
+        "similarity": 0.37953222
+      }
+    ],
+    "order": null,
+    "needs_escalation": false,
+    "outcome": "answered",
+    "trace_id": "ffda087c3a63402c82fea098ae18d7df",
+    "session_id": "demo_policy",
+    "masked_query": "When do I receive a COD refund?",
+    "review": {
+      "approved": true,
+      "final_answer": "[cod_refunds] For a cash on delivery (COD) order, a refund is initiated after the returned item passes the warehouse quality check. COD refunds reach the customer's verified bank account within 5 to 7 business days after refund initiation.\n[cod_refunds] The customer must submit bank details through the secure account form, and support must never request an OTP or a complete card number in chat. If the refund is missing after 7 business days, support creates a payments escalation using the return reference.",
+      "reason": "Every claim matches supplied policy or order evidence."
+    },
+    "tool_calls": [
+      {
+        "agent": "Retrieval Agent",
+        "tool": "rag_lookup",
+        "arguments": {
+          "query": "When do I receive a COD refund?"
+        },
+        "cache_hit": false
+      }
+    ],
+    "guardrails": [],
+    "usage": {
+      "prompt_tokens_upper_bound": 19333,
+      "completion_tokens_upper_bound": 4811,
+      "simulated_cost_usd": 0.028955,
+      "actual_cost_usd": 0,
+      "model_calls": 7
+    },
+    "elapsed_ms": 6002.09
+  },
+  "order_query": {
+    "answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+    "sources": [],
+    "order": {
+      "record_id": "NYK-0001",
+      "found": true,
+      "status": "Delivered",
+      "category": "Apparel",
+      "order_value_inr": 8684,
+      "days_since_created": 20,
+      "delayed_shipment": false,
+      "escalation_score": 0.233333,
+      "recommend_escalation": false
+    },
+    "needs_escalation": false,
+    "outcome": "answered",
+    "trace_id": "ca6fc881951d435289eeb889bf2c228b",
+    "session_id": "demo_order",
+    "masked_query": "Check the status of NYK-0001.",
+    "review": {
+      "approved": true,
+      "final_answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.",
+      "reason": "Every claim matches supplied policy or order evidence."
+    },
+    "tool_calls": [
+      {
+        "agent": "Lookup Agent",
+        "tool": "check_order_status",
+        "arguments": {
+          "record_id": "NYK-0001"
+        },
+        "cache_hit": false
+      }
+    ],
+    "guardrails": [],
+    "usage": {
+      "prompt_tokens_upper_bound": 11351,
+      "completion_tokens_upper_bound": 1315,
+      "simulated_cost_usd": 0.013981,
+      "actual_cost_usd": 0,
+      "model_calls": 6
+    },
+    "elapsed_ms": 898.388
+  },
+  "combined_query": {
+    "answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.\n[payment_retry] Retry only when the order page confirms payment failure, and use the same order's payment link to avoid a duplicate purchase. If the debit remains after 5 business days, submit the transaction reference through the secure support form without sharing a card number or OTP.\n[payment_retry] If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.",
+    "sources": [
+      {
+        "document_id": "payment_retry",
+        "chunk_id": "payment_retry:sentence:1",
+        "text": "Retry only when the order page confirms payment failure, and use the same order's payment link to avoid a duplicate purchase. If the debit remains after 5 business days, submit the transaction reference through the secure support form without sharing a card number or OTP.",
+        "similarity": 0.42727494
+      },
+      {
+        "document_id": "payment_retry",
+        "chunk_id": "payment_retry:sentence:0",
+        "text": "If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.",
+        "similarity": 0.41309315
+      },
+      {
+        "document_id": "cancellation",
+        "chunk_id": "cancellation:sentence:0",
+        "text": "An order can be cancelled from the account page while its status is Placed and before warehouse packing begins. Once packing or shipping starts, cancellation is unavailable and the customer must use the applicable return process after delivery.",
+        "similarity": 0.40685189
+      }
+    ],
+    "order": {
+      "record_id": "NYK-0001",
+      "found": true,
+      "status": "Delivered",
+      "category": "Apparel",
+      "order_value_inr": 8684,
+      "days_since_created": 20,
+      "delayed_shipment": false,
+      "escalation_score": 0.233333,
+      "recommend_escalation": false
+    },
+    "needs_escalation": false,
+    "outcome": "answered",
+    "trace_id": "b10a96118a914defb739aadab890392e",
+    "session_id": "demo_mixed",
+    "masked_query": "Check order NYK-0001 and explain the return policy.",
+    "review": {
+      "approved": true,
+      "final_answer": "Order NYK-0001: status Delivered; value INR 8684; age 20 days; delayed shipment false; escalation score 0.233333. Human escalation is not recommended by the triage rule.\n[payment_retry] Retry only when the order page confirms payment failure, and use the same order's payment link to avoid a duplicate purchase. If the debit remains after 5 business days, submit the transaction reference through the secure support form without sharing a card number or OTP.\n[payment_retry] If a payment fails but the account is debited, wait 30 minutes and check the order page before retrying. An unsuccessful debit is normally reversed by the payment provider within 3 to 5 business days.",
+      "reason": "Every claim matches supplied policy or order evidence."
+    },
+    "tool_calls": [
+      {
+        "agent": "Retrieval Agent",
+        "tool": "rag_lookup",
+        "arguments": {
+          "query": "Check order NYK-0001 and explain the return policy."
+        },
+        "cache_hit": false
+      },
+      {
+        "agent": "Lookup Agent",
+        "tool": "check_order_status",
+        "arguments": {
+          "record_id": "NYK-0001"
+        },
+        "cache_hit": false
+      }
+    ],
+    "guardrails": [],
+    "usage": {
+      "prompt_tokens_upper_bound": 24136,
+      "completion_tokens_upper_bound": 5799,
+      "simulated_cost_usd": 0.035734,
+      "actual_cost_usd": 0,
+      "model_calls": 8
+    },
+    "elapsed_ms": 663.764
+  }
+}
